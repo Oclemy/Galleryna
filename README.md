@@ -34,7 +34,42 @@ Add it in your root build.gradle at the end of repositories:
 ```
 Then add the dependency in your module level build.gradle:
 ```
-dependencies {
+            dependencies {
 	        implementation 'com.github.Oclemy:Galleryna:1.0.0'
-	}
+	   }
 ```
+
+## Usage
+
+Using this library is as simple as it can get. 
+
+1. Extend the `GalleyActivity`:
+
+```kotlin
+class MainActivity : GalleryActivity() {
+```
+
+2. Pass an array of images:
+
+```kotlin
+Config.setImageURLs(photos().toTypedArray())
+```
+
+Here is the full activity:
+```kotlin
+class MainActivity : GalleryActivity() {
+
+    private fun photos() = (169..216)
+        .map { "https://picsum.photos/1000/700?image=$it" }
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        Config.setImageURLs(photos().toTypedArray())
+    }
+}
+```
+
+And that's it. You will now get a full image gallery. When an image is clicked, a zoomable and swipeable full screen image is opened. The clicked image is selected.
+
+Enjoy.
