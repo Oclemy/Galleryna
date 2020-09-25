@@ -74,6 +74,22 @@ class MainActivity : GalleryActivity() {
 }
 ```
 
+Now in your Android Manifest file make sure you register the following two activities:
+
+```xml
+ 	<activity
+            android:name="info.camposha.galleryna.GalleryActivity"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name="info.camposha.galleryna.ViewPagerActivity"
+            android:theme="@style/AppTheme.Fullscreen" />
+```
+
 And that's it. You will now get a full image gallery. When an image is clicked, a zoomable and swipeable full screen image is opened. The clicked image is selected.
 
 Enjoy.
+
+## Contact
+ Email: oclemmi@gmail.com
+ Founder of: https://camposha.info( android.camposha.info, flutter.camposha.info, flutter.camposha.info)
+ Channel: ProgrammingWizards TV
