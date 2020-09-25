@@ -17,6 +17,11 @@ I work on so I decided to wrap it up in a library.
 5. The image position is automatically shown in a textview in the detail page.
 6. This library is very lightweight. The only dependency it uses is Glide to load images efficiently.
 
+## Demo
+Here is the demo:
+
+![Galleryna Demo](galleryna_demo.gif)
+
 ## Built with:
 1. Androidx
 2. Kotlin
