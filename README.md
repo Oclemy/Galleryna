@@ -1,5 +1,8 @@
+![](https://jitpack.io/v/Oclemy/Galleryna.svg)
+
 # Galleryna
 A ready made full screen master detail image gallery library with both listing and swipe view. Only one line of code to use it.
+
 
 ## Introduction
 It is now easier than ever to include a full image gallery into your application. I always need this capability in most of the projects 
@@ -12,8 +15,9 @@ I work on so I decided to wrap it up in a library.
 3. In the detail page the image is zoomable using touch gestures like photoview.
 4. The image is also swipeable
 5. The image position is automatically shown in a textview in the detail page.
+6. This library is very lightweight. The only dependency it uses is Glide to load images efficiently.
 
-## Uses
+## Built with:
 1. Androidx
 2. Kotlin
 3. Glide
