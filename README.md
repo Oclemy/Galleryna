@@ -66,17 +66,14 @@ Config.setImageURLs(photos().toTypedArray())
 
 Here is the full activity:
 ```kotlin
-class MainActivity : GalleryActivity() {
-
-    private fun photos() = (169..216)
+private fun images() = (169..216)
         .map { "https://picsum.photos/1000/700?image=$it" }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Config.setImageURLs(photos().toTypedArray())
+        Config.setImageURLs(images().toTypedArray())
     }
-}
 ```
 
 Now in your Android Manifest file make sure you register the following two activities:
@@ -89,6 +86,7 @@ Now in your Android Manifest file make sure you register the following two activ
             android:name="info.camposha.galleryna.ViewPagerActivity"
             android:theme="@style/AppTheme.Fullscreen" />
 ```
+If you don't want full screen then ommit the full screen theme in the above android manifest.
 
 And that's it. You will now get a full image gallery. When an image is clicked, a zoomable and swipeable full screen image is opened. The clicked image is selected.
 
