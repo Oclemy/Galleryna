@@ -103,6 +103,6 @@ And that's it. You will now get a full image gallery. When an image is clicked, 
 Enjoy.
 
 ## Contact
- Email: oclemmi@gmail.com
- Founder of: https://camposha.info( android.camposha.info, flutter.camposha.info, flutter.camposha.info)
- Channel: ProgrammingWizards TV
+ 1. Email: oclemmi@gmail.com
+ 2. Founder of: https://camposha.info( android.camposha.info, flutter.camposha.info, flutter.camposha.info)
+ 3. Channel: ProgrammingWizards TV
