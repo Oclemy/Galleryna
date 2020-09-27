@@ -66,7 +66,9 @@ Config.setImageURLs(photos().toTypedArray())
 
 Here is the full activity:
 ```kotlin
-private fun images() = (169..216)
+class MainActivity : GalleryActivity() {
+
+    private fun images() = (169..216)
         .map { "https://picsum.photos/1000/700?image=$it" }
 
 
@@ -74,6 +76,7 @@ private fun images() = (169..216)
         super.onCreate(savedInstanceState)
         Config.setImageURLs(images().toTypedArray())
     }
+}
 ```
 
 Now in your Android Manifest file make sure you register the following two activities:
