@@ -91,6 +91,13 @@ Now in your Android Manifest file make sure you register the following two activ
 ```
 If you don't want full screen then ommit the full screen theme in the above android manifest.
 
+Hey, and don't forget to add permission for internet connectivity:
+
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+```
+
+
 And that's it. You will now get a full image gallery. When an image is clicked, a zoomable and swipeable full screen image is opened. The clicked image is selected.
 
 Enjoy.
